@@ -1,32 +1,5 @@
-<<<<<<< HEAD
-## 前后端请求
-| 功能 | 请求URL | req参数 | req参数备注 | res参数 | res参数备注 |
-| :----: | :----: | :----: | :----: | :----: | :----: |
-| 登录 | /users/login | email;password |  |status;message;content|  |
-| 注册 | /users/register | email;password;recheck |  |status;message;content|  |
-| 修改密码 | /users/resetpwd | email;old_pwd;new_pwd |  |status;message;content|  |
-| 给我留言 | /users/bbs | email;title;message | title为留言标题;message为留言内容 |status;message;content|  |
-| 搜索股票 | /stockPredicts/getByStockId | stockId;pickdate |pickdate为自定义预测时间  |status;message;content|  |
-| 显示所有股票 | /stockPredicts/stockPredicts |  |  |status;message;content|  |
-| 显示用户收藏的股票 | /stocks/stockFavorite | email |  |status;message;content| 注意返回来的content中股票信息要有stockId和stockName两个字段 |
-| 在收藏夹里新增一条股票 | /stocks/addFavorite | stockNum;email |  |status;message;content|  |
-| 在收藏夹里删除一条股票 | /stocks/delFavorite | stockNum;email |  |status;message;content|  |
-|显示排行榜|/stocks/getRank||不需要参数|status;message;content|content包括预测准确度前50名的用户email+其准确率predictRate
-
-## 项目功能点
-| 功能 | 页面 | 备注 | 相关 |
-| :----: | :----: | :----: | :----: |
-|注册|register|邮箱注册,发送验证邮件,点击激活账号||
-|登录|login|邮箱登录||
-|搜索股票|index|股票搜索框可用代码\缩写\全拼搜索,登录用户可享有收藏夹,留言,修改密码功能||
-|显示股票|showstock|显示股票涨跌情况,股票信息,可收藏或取消收藏该支股票,可返回上一页,可显示所有收藏股票||
-|收藏夹模块|showstock|从个人中心点进去的收藏夹可在里面添加\删除任何股票,从显示股票面板点进去收藏夹可link到某只收藏股票的预测||
-|个人中心|showstock,index|修改密码\留言\收藏夹增加删除||
-|滚动排行榜|index|滚动显示准确度前50名的用户||
-
-## 商业模式
-当前是在右上角有支付宝打赏，后期要改成如何待定。
-
+# 说明
+可能需要一些调整，有些前端请求修改了后node没有改。
 
 ## 开发
 ```
